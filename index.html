@@ -23,15 +23,20 @@
         <a href="/" class="navbar-brand">
             <img src="assets/images/dar-tangier-logo.jpg" alt="Logo" style="height: 40px; margin-right:8px">
             Dar Tangier</a>
-        <ul class="navbar-nav me-auto">
-            <li class="active nav-item mr-2"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="active nav-item mr-2"><a class="nav-link" href="menu.html">Menu</a></li>
-            <li class="active nav-item mr-2"><a class="nav-link" href="about.html">About</a></li>
-            <li class="active nav-item mr-2"><a class="nav-link" href="reservation.html">Reservation</a></li>
-            <li class="nav-item d-sm-none">
-                <a href="/login" class="nav-link">Sign In / Sign Up</a>
-            </li>
-        </ul>
+        <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto">
+                <li class="active nav-item mr-2"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="active nav-item mr-2"><a class="nav-link" href="menu.html">Menu</a></li>
+                <li class="active nav-item mr-2"><a class="nav-link" href="about.html">About</a></li>
+                <li class="active nav-item mr-2"><a class="nav-link" href="reservation.html">Reservation</a></li>
+                <li class="nav-item d-sm-none">
+                    <a href="/login" class="nav-link">Sign In / Sign Up</a>
+                </li>
+            </ul>
+        </div>
         <a href="/login" class="btn btn-primary ms-auto d-none d-sm-block">Sign In / Sign Up</a>
     </nav>
     <!--/Navigation Bar-->
@@ -52,13 +57,15 @@
         <div class="row">
             <div class="col-12 my-5">
                 <section class="intro-section">
-                    <h2 class="text-uppercase">Our Story</h2>
-                    <p>Dar Tangier brings the essence of Moroccan cuisine and culture to your table. 
+                    <h2 class="text-uppercase text-center">Our Story</h2>
+                    <p class="text-center">Dar Tangier brings the essence of Moroccan cuisine and culture to your table. 
                     Founded by a proud Moroccan from Tangier, our restaurant is a celebration of traditional flavors, 
                     warm hospitality, and the rich heritage of Morocco. Each dish tells a story, inspired by the vibrant 
                     culinary traditions of our homeland, inviting you to experience the warmth and authenticity of Moroccan dining.</p>
-                    <button type="button" class="btn btn-primary">Book a Table</button>
-                    <button type="button" class="btn btn-primary">Contact Us</button>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary">Book a Table</button>
+                        <button type="button" class="btn btn-primary">Contact Us</button>
+                    </div>
                 </section>
             </div>
         </div>
@@ -72,25 +79,41 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-4 my-5">
-                    <div class="featured-dish">
-                        <h3 class="text-uppercase">Tagine</h3>
-                        <p>Slow-cooked savory stew with tender meat, fish or vegetables and aromatic spices</p>
+                    <div class="media">
+                        <img src="assets/images/tagine.jpg" alt="Image of Tagine" height="250" width="250">
+                        <div class="media-body">
+                            <div class="featured-dish">
+                                <h3 class="text-uppercase">Tagine</h3>
+                                <p>Slow-cooked savory stew with tender meat, fish or vegetables and aromatic spices</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 my-5">  
-                    <div class="featured-dish">
-                        <h3 class="text-uppercase">Couscous</h3>
-                        <p>Fluffy semolina topped with vegetables and succulent meats or vegetables</p>
+                <div class="col-12 col-md-4 my-5">
+                    <div class="media">
+                        <img src="assets/images/couscous.avif" alt="Image of Couscous" height="250" width="250">
+                        <div class="media-body">  
+                            <div class="featured-dish">
+                                <h3 class="text-uppercase">Couscous</h3>
+                                <p>Fluffy semolina topped with vegetables and succulent meats or vegetables</p>
+                            </div>
+                        </div>
                     </div>
                 </div> 
                 <div class="col-12 col-md-4 my-5">
-                    <div class="featured-dish">
-                        <h3 class="text-uppercase">Pastilla</h3>
-                        <p>Sweet and savory pie with layers of crispy pastry and spiced filling</p>
-                    </div>
+                    <div class="media">
+                        <img src="assets/images/pastilla.jpg" alt="Image of Couscous" height="250" width="250">
+                        <div class="media-body">  
+                            <div class="featured-dish">
+                                <h3 class="text-uppercase">Pastilla</h3>
+                                <p>Sweet and savory pie with layers of crispy pastry and spiced filling</p>
+                            </div>
+                        </div>
                 </div>
             </div>
-            <button type="button" class="btn btn-primary">View full menu<i class="fa-solid fa-angle-right"></i></button>
+            <div class="text-center">
+                <button type="button" class="btn btn-primary d-inline-block">View full menu<i class="fa-solid fa-angle-right"></i></button>
+            </div>
         </section>
     <!--/Featured Dishes Section-->
     <!--Get in Touch Section-->
@@ -109,16 +132,22 @@
                         <label for="message" class="form-label">Message</label>
                         <textarea id="message" rows="3" maxlength="300" class="form-control" id="message" placeholder="Your message" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
                     </form>
                 </div>
             </div>
         </section>
-        <!--Get in Touch Section-->‚
+        <!--Get in Touch Section-->
     </article>
     <footer>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
