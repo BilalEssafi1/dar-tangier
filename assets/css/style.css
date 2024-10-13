@@ -3,3 +3,13 @@
 button i {
     margin-left: 5px;
 }
+
+/* Spacing */
+section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.get-in-touch {
+    margin-top: 50px;
+}
