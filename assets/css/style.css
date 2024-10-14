@@ -1,21 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 
-/* Font */
+/* Basic styles for the html, body and main section */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding:0;
+}
+
 body {
     font-family: "Amiri", serif;
-    height: 100%;
-    margin:0;
-    padding:0; 
+    margin: 0;
+    padding: 0; 
     display: flex;
     flex-direction: column;
+    min-height: 100vh; 
 }
 
 main {
-    flex: 1;
+    flex: 1 0 auto;
 }
 
-/* Navbar styling */
+/* Styles for the Navbar */
 .custom-navbar {
     background-color: rgb(124 45 18)
 }
@@ -25,16 +31,54 @@ main {
     color: rgb(255 237 213);
 }
 
-/* Button styles */
+.navbar-brand:hover {
+    color: rgb(255 237 213);
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+/* style for the buttons */
+
+button {
+    margin-top: 15px;
+}
 
 button i {
     margin-left: 5px;
+}
+.btn-sand {
+    background-color: rgb(255 237 213);
+    color: rgb(124 45 18);
+    font-weight: bold;
+    border: none;
+}
+
+.btn-sand:hover {
+    background-color: rgb(124 45 18);
+    color:  rgb(255 237 213);
+}
+
+.btn-mahagony {
+    background-color: rgb(154 52 18);
+    color: rgb(255 237 213);
+    font-weight: bold;
+    border: none;
+}
+
+.btn-mahagony:hover {
+    background-color: rgb(124 45 18);
+    color: rgb(255 237 213);
+    font-weight: bold;
+    border: none;
+}
 }
 
 /* Spacing */
 section {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 .get-in-touch {
@@ -54,10 +98,11 @@ section {
     text-align: center; 
 }
 
-/* Hero container styles */
+/* Style for the Hero container*/
 
 .hero-container {
-    height: 50vh;
+    height: auto;
+    min-height: 50vh;
     background: url("../images/hero-image.webp") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -67,6 +112,7 @@ section {
     align-items: center;
     justify-content: center;
     position: relative;
+    margin:0;
 }
 
 .hero-title {
@@ -98,10 +144,11 @@ section {
 }
 
 
-/* Intro container styles */
+/* Style for the intro container */
 
 .intro-container {
-    height: 50vh;
+    height: auto;
+    min-height: 50vh;
     background-color: rgb(255 247 237);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -111,16 +158,22 @@ section {
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-bottom: 0px;
 }
 
 .intro-section, 
 .featured-dishes {
     color: rgb(124 45 18);
 }
-/* Featured dish container styles */
+
+.intro-section {
+    margin-right: 60px;
+}
+/* Style for the featured dish container */
 
 .featured-dishes-container {
-    height: 50vh;
+    height: auto;
+    min-height: 50vh;
     background-color: rgb(255 237 213);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -130,12 +183,14 @@ section {
     align-items: center;
     justify-content: center;
     position: relative;
+    margin: 0;
 }
 
-/* Get in touch container styles */
+/* Style for the Get in touch container */
 
 .get-in-touch-container {
-    height: 50vh;
+    height: auto;
+    min-height: 50vh;
     background-color: rgb(154 52 18);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -145,7 +200,7 @@ section {
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .get-in-touch {
@@ -156,14 +211,45 @@ section {
     color: rgb(255 237 213);
 }
 
-/* Footer styles */
+/* Style for the form */
+
+.contact-form {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.contact-form,
+.form-label {
+    font-size: 1.2rem;
+}
+
+/* Style for the footer */
 footer {
     background-color: rgb(124, 45, 18);
     color: rgb(255 237 213);
-    display: flex;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 0px;
     flex-shrink: 0;
-    width: 100%;
-    align-items:center;
+}
+
+footer ul {
+    list-style-type:none;
     margin:0;
-    height:auto;
+    padding:0;
+}
+
+footer li {
+    font-size: 1.5em;
+    display: inline-block;
+    margin:0 25px;
+}
+
+.footer-text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.fa-brands {
+    color: rgb(255 237 213);
 }
