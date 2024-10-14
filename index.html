@@ -34,11 +34,11 @@
                     <li class="nav-item mr-2"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item mr-2"><a class="nav-link" href="reservation.html">Reservation</a></li>
                     <li class="nav-item d-sm-none">
-                        <a href="/login" class="nav-link" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign In / Sign Up</a>
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign In / Sign Up</a>
                     </li>
                 </ul>
             </div>
-            <a href="/login" class="btn btn-primary ms-auto d-none d-sm-block btn-sand" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign In / Sign Up</a>
+            <a class="btn btn-primary ms-auto d-none d-sm-block btn-sand" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign In / Sign Up</a>
         </nav>
         <!--/Navigation Bar-->
         <!--Hero Section-->
@@ -49,8 +49,12 @@
                     <section class="hero-banner p-5 text-center">
                         <h1 class="text-uppercase hero-title">Welcome to Dar Tangier!</h1>
                         <h3 class="hero-text">Experience the rich flavors and warm hospitality of Morocco in the heart of Munich.</h3>
-                        <button type="button" class="btn btn-primary btn-sand">View Menu<i class="fa-solid fa-bars"></i></button>
-                        <button type="button" class="btn btn-primary btn-sand">Make a Reservation<i class="fa-regular fa-calendar"></i></button>
+                        <a href="menu.html">
+                            <button type="button" class="btn btn-primary btn-sand">View Menu<i class="fa-solid fa-bars"></i></button>
+                        </a>
+                        <a href="#signUpModal" data-bs-target="#signUpModal" data-bs-toggle="modal">
+                            <button type="button" class="btn btn-primary btn-sand">Make a Reservation<i class="fa-regular fa-calendar"></i></button>
+                        </a>
                     </section>
                 </div>
             </div>
@@ -68,8 +72,12 @@
                             warm hospitality, and the rich heritage of Morocco. Each dish tells a story, inspired by the vibrant 
                             culinary traditions of our homeland, inviting you to experience the warmth and authenticity of Moroccan dining.</h4>
                             <div class="text-left">
-                                <button type="button" class="btn btn-primary btn-mahagony">Book a Table</button>
-                                <button type="button" class="btn btn-primary btn-mahagony">Contact Us</button>
+                                <a data-bs-target="#signUpModal" data-bs-toggle="modal">
+                                    <button type="button" class="btn btn-primary btn-mahagony">Book a Table</button>
+                                </a>
+                                <a href="#contact">
+                                    <button type="button" class="btn btn-primary btn-mahagony">Contact Us</button>
+                                </a>
                             </div>
                         </section>
                     </div>
@@ -126,14 +134,16 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <button type="button" class="btn btn-primary d-inline-block btn-mahagony">View full menu<i class="fa-solid fa-angle-right"></i></button>
+                        <a href="menu.html">
+                            <button type="button" class="btn btn-primary d-inline-block btn-mahagony">View full menu<i class="fa-solid fa-angle-right"></i></button>
+                        </a>
                     </div>
                 </section>
             </div>
         </div>
         <!--/Featured Dishes Section-->
         <!--Get in Touch Section-->
-        <div class=" container-fluid get-in-touch-container">
+        <div class=" container-fluid get-in-touch-container" id="contact">
             <div class="container">
                 <section>
                     <div class="row">
