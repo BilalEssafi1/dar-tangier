@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/* Font */
+body {
+    font-family: "Amiri", serif;
+    height: 100%;
+    margin:0;
+    padding:0; 
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Navbar styling */
+.custom-navbar {
+    background-color: rgb(124 45 18)
+}
+
+.navbar-brand,
+.nav-link {
+    color: rgb(255 237 213);
+}
+
 /* Button styles */
 
 button i {
@@ -25,4 +52,118 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center; 
+}
+
+/* Hero container styles */
+
+.hero-container {
+    height: 50vh;
+    background: url("../images/hero-image.webp") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-title {
+    color: rgb(255 237 213);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.hero-text {
+    color: rgb(255 237 213);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.hero-banner {
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+
+/* Intro container styles */
+
+.intro-container {
+    height: 50vh;
+    background-color: rgb(255 247 237);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.intro-section, 
+.featured-dishes {
+    color: rgb(124 45 18);
+}
+/* Featured dish container styles */
+
+.featured-dishes-container {
+    height: 50vh;
+    background-color: rgb(255 237 213);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Get in touch container styles */
+
+.get-in-touch-container {
+    height: 50vh;
+    background-color: rgb(154 52 18);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.get-in-touch {
+    color: rgb(255 237 213);
+}
+
+#emailHelp {
+    color: rgb(255 237 213);
+}
+
+/* Footer styles */
+footer {
+    background-color: rgb(124, 45, 18);
+    color: rgb(255 237 213);
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    align-items:center;
+    margin:0;
+    height:auto;
 }

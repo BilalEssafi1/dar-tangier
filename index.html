@@ -18,131 +18,147 @@
     <link rel="icon" type="image/png" href="assets/images/dar-tangier-logo.jpg">
 </head>
 <body>
-    <!--Navigation Bar-->
-    <nav class="navbar navbar-light bg-light navbar-expand-sm">
-        <a href="/" class="navbar-brand">
-            <img src="assets/images/dar-tangier-logo.jpg" alt="Logo" style="height: 40px; margin-right:8px">
-            Dar Tangier</a>
-        <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav me-auto">
-                <li class="active nav-item mr-2"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="active nav-item mr-2"><a class="nav-link" href="menu.html">Menu</a></li>
-                <li class="active nav-item mr-2"><a class="nav-link" href="about.html">About</a></li>
-                <li class="active nav-item mr-2"><a class="nav-link" href="reservation.html">Reservation</a></li>
-                <li class="nav-item d-sm-none">
-                    <a href="/login" class="nav-link" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign In / Sign Up</a>
-                </li>
-            </ul>
-        </div>
-        <a href="/login" class="btn btn-primary ms-auto d-none d-sm-block" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign In / Sign Up</a>
-    </nav>
-    <!--/Navigation Bar-->
-    <article class="container">
-    <!--Hero Section-->
-        <div class="row">
-            <div class="col-12">
-                <section class="hero-banner bg-light p-5 text-center rounded">
-                    <h1 class="text-uppercase">Welcome to Dar Tangier!</h1>
-                    <p>Experience the rich flavors and warm hospitality of Morocco in the heart of Munich.</p>
-                    <button type="button" class="btn btn-primary">View Menu<i class="fa-solid fa-bars"></i></button>
-                    <button type="button" class="btn btn-primary">Make a Reservation<i class="fa-regular fa-calendar"></i></button>
-                </section>
+    <main>
+        <!--Navigation Bar-->
+        <nav class="navbar navbar-light navbar-expand-sm fixed-top custom-navbar">
+            <a href="/" class="navbar-brand">
+                <img src="assets/images/dar-tangier-logo.jpg" alt="Logo" style="height: 40px; margin-right:8px">
+                Dar Tangier</a>
+            <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto">
+                    <li class="active nav-item mr-2"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="active nav-item mr-2"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="active nav-item mr-2"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="active nav-item mr-2"><a class="nav-link" href="reservation.html">Reservation</a></li>
+                    <li class="nav-item d-sm-none">
+                        <a href="/login" class="nav-link" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign In / Sign Up</a>
+                    </li>
+                </ul>
             </div>
-        </div>  
-    <!--/Hero Section-->
-    <!--Intro Section-->
-        <div class="row">
-            <div class="col-12 my-5">
-                <section class="intro-section">
-                    <h2 class="text-uppercase text-center">Our Story</h2>
-                    <p class="text-center">Dar Tangier brings the essence of Moroccan cuisine and culture to your table. 
-                    Founded by a proud Moroccan from Tangier, our restaurant is a celebration of traditional flavors, 
-                    warm hospitality, and the rich heritage of Morocco. Each dish tells a story, inspired by the vibrant 
-                    culinary traditions of our homeland, inviting you to experience the warmth and authenticity of Moroccan dining.</p>
-                    <div class="text-center">
-                        <button type="button" class="btn btn-primary">Book a Table</button>
-                        <button type="button" class="btn btn-primary">Contact Us</button>
-                    </div>
-                </section>
-            </div>
-        </div>
-    <!--Featured Dishes Section-->
-        <section class="featured-dishes my-5">
+            <a href="/login" class="btn btn-primary ms-auto d-none d-sm-block" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign In / Sign Up</a>
+        </nav>
+        <!--/Navigation Bar-->
+        <!--Hero Section-->
+        <div class="hero-container container-fluid">
+            <div class="overlay">&nbsp;</div>
             <div class="row">
                 <div class="col-12">
-                    <h2 class="text-uppercase text-center">Featured Dishes</h2>
-                    <p class="text-center">Discover our chef's selection of authentic Moroccan cuisine</p>
+                    <section class="hero-banner p-5 text-center">
+                        <h1 class="text-uppercase hero-title">Welcome to Dar Tangier!</h1>
+                        <h3 class="hero-text">Experience the rich flavors and warm hospitality of Morocco in the heart of Munich.</h3>
+                        <button type="button" class="btn btn-primary">View Menu<i class="fa-solid fa-bars"></i></button>
+                        <button type="button" class="btn btn-primary">Make a Reservation<i class="fa-regular fa-calendar"></i></button>
+                    </section>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-md-4 my-5">
-                    <div class="media">
-                        <img src="assets/images/tagine.jpg" alt="Image of Tagine" height="250" width="250">
-                        <div class="media-body">
-                            <div class="featured-dish">
-                                <h3 class="text-uppercase">Tagine</h3>
-                                <p>Slow-cooked savory stew with tender meat, fish or vegetables and aromatic spices</p>
+        </div>  
+        <!--/Hero Section-->
+        <!--Intro Section-->
+        <div class="intro-container container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 my-5">
+                        <section class="intro-section">
+                            <h2 class="text-uppercase text-center">Our Story</h2>
+                            <h4 class="text-center">Dar Tangier brings the essence of Moroccan cuisine and culture to your table. 
+                            Founded by a proud Moroccan from Tangier, our restaurant is a celebration of traditional flavors, 
+                            warm hospitality, and the rich heritage of Morocco. Each dish tells a story, inspired by the vibrant 
+                            culinary traditions of our homeland, inviting you to experience the warmth and authenticity of Moroccan dining.</h4>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-primary">Book a Table</button>
+                                <button type="button" class="btn btn-primary">Contact Us</button>
                             </div>
-                        </div>
+                        </section>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 my-5">
-                    <div class="media">
-                        <img src="assets/images/couscous.avif" alt="Image of Couscous" height="250" width="250">
-                        <div class="media-body">  
-                            <div class="featured-dish">
-                                <h3 class="text-uppercase">Couscous</h3>
-                                <p>Fluffy semolina topped with vegetables and succulent meats or vegetables</p>
-                            </div>
+            </div>
+        </div>
+        <!--Featured Dishes Section-->
+        <div class="featured-dishes-container container-fluid">
+            <div class="container">
+                <section class="featured-dishes my-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="text-uppercase text-center">Featured Dishes</h2>
+                            <h4 class="text-center">Discover our chef's selection of authentic Moroccan cuisine</h4>
                         </div>
                     </div>
-                </div> 
-                <div class="col-12 col-md-4 my-5">
-                    <div class="media">
-                        <img src="assets/images/pastilla.jpg" alt="Image of Couscous" height="250" width="250">
-                        <div class="media-body">  
-                            <div class="featured-dish">
-                                <h3 class="text-uppercase">Pastilla</h3>
-                                <p>Sweet and savory pie with layers of crispy pastry and spiced filling</p>
+                    <div class="row">
+                        <div class="col-12 col-md-4 my-5">
+                            <div class="media">
+                                <img src="assets/images/tagine.jpg" alt="Image of Tagine" height="250" width="250">
+                                <div class="media-body">
+                                    <div class="featured-dish">
+                                        <h2 class="text-uppercase">Tagine</h2>
+                                        <h4>Slow-cooked savory stew with tender meat, fish or vegetables and aromatic spices</h4>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                </div>
-            </div>
-            <div class="text-center">
-                <button type="button" class="btn btn-primary d-inline-block">View full menu<i class="fa-solid fa-angle-right"></i></button>
-            </div>
-        </section>
-    <!--/Featured Dishes Section-->
-    <!--Get in Touch Section-->
-        <section>
-            <div class="row">
-                <div class="col-12 my-5 get-in-touch">
-                    <h3 class="text-center">Get in Touch</h3>
-                    <p class="text-center">Have a question or want to make a reservation? We're here to help!</p>
-                    <form>
-                        <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email" required>
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        <div class="col-12 col-md-4 my-5">
+                            <div class="media">
+                                <img src="assets/images/couscous.avif" alt="Image of Couscous" height="250" width="250">
+                                <div class="media-body">  
+                                    <div class="featured-dish">
+                                        <h2 class="text-uppercase">Couscous</h2>
+                                        <h4>Fluffy semolina topped with vegetables and succulent meats or vegetables</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-12 col-md-4 my-5">
+                            <div class="media">
+                                <img src="assets/images/pastilla.jpg" alt="Image of Couscous" height="250" width="250">
+                                <div class="media-body">  
+                                    <div class="featured-dish">
+                                        <h2 class="text-uppercase">Pastilla</h2>
+                                        <h4>Sweet and savory pie with layers of crispy pastry and spiced filling</h4>
+                                    </div>
+                                </div>
                         </div>
-                        <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea id="message" rows="3" maxlength="300" class="form-control" id="message" placeholder="Your message" required></textarea>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </div>
-                    </form>
-                </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary d-inline-block">View full menu<i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </section>
             </div>
-        </section>
-     <!--/Get in Touch Section-->
-    </article>
-    <footer>
+        </div>
+        <!--/Featured Dishes Section-->
+        <!--Get in Touch Section-->
+        <div class=" container-fluid get-in-touch-container">
+            <div class="container">
+                <section>
+                    <div class="row">
+                        <div class="col-12 my-5 get-in-touch">
+                            <h2 class="text-center">Get in Touch</h2>
+                            <h4 class="text-center">Have a question or want to make a reservation? We're here to help!</h4>
+                            <form>
+                                <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email" required>
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                </div>
+                                <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" rows="3" maxlength="300" class="form-control" id="message" placeholder="Your message" required></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!--/Get in Touch Section-->
+    </main>
 
+    <footer>
+        <div class="container"></div>
     </footer>
     <!--Sign Up Form-->
     <div class="modal" tabindex="-1" id="signUpModal">
