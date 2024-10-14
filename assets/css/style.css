@@ -6,6 +6,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding:0;
+    overflow-x: hidden;
 }
 
 body {
@@ -36,7 +37,14 @@ main {
 }
 
 .nav-link:hover {
-    color: black;
+    font-weight: bold;
+    color: rgb(255 237 213);
+}
+
+.navbar-nav .nav-item-active .nav-link {
+    text-decoration: underline; 
+    color: rgb(255 237 213);
+    font-weight: bold;
 }
 
 /* style for the buttons */
@@ -72,7 +80,6 @@ button i {
     color: rgb(255 237 213);
     font-weight: bold;
     border: none;
-}
 }
 
 /* Spacing */
@@ -253,3 +260,16 @@ footer li {
 .fa-brands {
     color: rgb(255 237 213);
 }
+
+/* Style for the Menu section */
+
+.menu-section {
+    background-color: rgb(255 237 213);
+    color: rgb(124 45 18);
+    font-size: 1.2rem;
+}
+
+.menu-content {
+    margin: 20px;
+}
+
