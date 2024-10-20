@@ -20,6 +20,7 @@ body {
 
 main {
     flex: 1 0 auto;
+    margin: 0;
 }
 
 /* Styles for the Navbar */
@@ -278,4 +279,8 @@ footer li {
     height: 400px;
     width: 100%; 
     margin-bottom: 30px; 
+  }
+
+  .location {
+    padding: 40px;
   }
