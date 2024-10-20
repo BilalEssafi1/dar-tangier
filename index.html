@@ -74,9 +74,7 @@
                                 <a data-bs-target="#signUpModal" data-bs-toggle="modal">
                                     <button type="button" class="btn btn-primary btn-mahagony">Book a Table</button>
                                 </a>
-                                <a href="#contact">
-                                    <button type="button" class="btn btn-primary btn-mahagony">Contact Us</button>
-                                </a>
+                                <button type="button" class="btn btn-primary btn-mahagony" data-bs-toggle="modal" data-bs-target="#galleryModal">View Photos</button>
                             </div>
                         </section>
                     </div>
@@ -87,6 +85,27 @@
             </div>
         </div>
         <!--/Intro Section-->
+        <!-- Hidden Gallery Modal -->
+        <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="galleryModalLabel">Our Restaurant Images</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="text-center">
+                            <img id="galleryImage" src="assets/images/restaurant.avif" class="img-fluid" alt="Restaurant Image" style="max-width: 100%; height: auto;">
+                        </div>
+                        <div class="text-center mt-3">
+                            <button id="prevButton" class="btn btn-secondary">Previous</button>
+                            <button id="nextButton" class="btn btn-secondary">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Hidden Gallery Modal -->
         <!--Featured Dishes Section-->
         <div class="featured-dishes-container container-fluid">
             <div class="container">
