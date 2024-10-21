@@ -16,6 +16,17 @@
     <title>Dar Tangier | Taste the flavors of Morocco</title>
     <!--Title Logo-->
     <link rel="icon" type="image/png" href="assets/images/dar-tangier-logo.jpg">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <!-- Initialize EmailJS -->
+    <script type="text/javascript">
+        (function(){
+           emailjs.init({
+             publicKey: "IYIFNLsGz1yhScAQD",
+           });
+        })();
+     </script>
 </head>
 <body>
     <main>
@@ -168,7 +179,7 @@
                         <div class="col-12 my-5 get-in-touch">
                             <h2 class="text-center">Get in Touch</h2>
                             <h4 class="text-center">Have a question or want to make a reservation? We're here to help!</h4>
-                            <form class="contact-form">
+                            <form id="contact-form" class="contact-form">
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Email address</label>
                                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email" required>
@@ -211,6 +222,7 @@
             <p>Leopoldstraße 50, 80802 Munich, Germany</p>
         </div>
     </footer>
+    <script src="js/sendEmail.js"></script>
     <!--Sign Up Form-->
     <div class="modal" tabindex="-1" id="signUpModal">
         <div class="modal-dialog">
