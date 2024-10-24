@@ -1,5 +1,5 @@
 // Google Maps Location
-function initMap() {
+window.initMap = function() {
     const leopoldStr = { lat: 48.1618, lng: 11.5843 };
     const map = new google.maps.Map(document.getElementById('map'), {
         zoom: 15,
