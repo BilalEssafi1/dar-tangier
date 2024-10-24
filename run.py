@@ -1,6 +1,8 @@
 import os
 
-from flask import Flask, render_template
+from flask import Flask, render_template, flash
+if os.path.exists("env.py"):
+    import env
 
 app = Flask(__name__)
 
